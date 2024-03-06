@@ -1,11 +1,3 @@
-# DevOps Ninja 
-
-https://github.com/jonathanbaraldi/github-actions-terraform-eks-traefik-app.git
-
-
-## Udemy
-https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/?referralCode=E0F907D36B02CEE83227
-
 ## Roteiro
 
 - Repositorio
