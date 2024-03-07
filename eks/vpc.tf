@@ -10,7 +10,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "lanchoente-de-bairro-eks-${random_string.suffix.result}"
+  cluster_name = "eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
@@ -20,7 +20,7 @@ resource "random_string" "suffix" {
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "2.66.0"
+  version = "5.5.3"
 
   name                 = "lanchonete-de-bairro-vpc"
   cidr                 = "10.0.0.0/16"
