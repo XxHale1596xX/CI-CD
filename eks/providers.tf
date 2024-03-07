@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-deploy-jonjon"
-    key    = "lanchonete-de-bairro-eks"
+    bucket = "terraform-deploy"
+    key    = "path/to/my/key"
     region = "us-east-2"
   }
 }
