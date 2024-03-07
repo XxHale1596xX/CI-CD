@@ -1,6 +1,16 @@
 name: 'Terraform CI'
 
-on: pull_request
+on:
+
+ push:
+    branches:
+      - main
+    paths:
+      - eks/**
+  
+  pull_request: # [master, next]
+    paths:
+      - eks/**
 
 jobs:
   terraform:
