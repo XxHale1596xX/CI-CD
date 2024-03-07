@@ -1,4 +1,4 @@
-module "aws" {
+module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = local.cluster_name
   cluster_version = "1.26"
@@ -10,10 +10,6 @@ module "aws" {
   }
 
   vpc_id = module.vpc.vpc_id
-
-  workers_group_defaults = {
-    root_volume_type = "gp2"
-  }
 
   worker_groups = [
     {
